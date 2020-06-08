@@ -1,63 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Second Project</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Assignment solution for module 3</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-dark" id="navbar-background">
-            <div class="navbar-brand">Food, LLC</div>
-            <button class="navbar-toggle d-block d-sm-none ml-auto " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="navbar-toggle-icon mt-1"></div>
-                <div class="navbar-toggle-icon mt-1"></div>
-                <div class="navbar-toggle-icon mt-1"></div>
-            </button>
-        </nav>
-    </div>
-    
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div id="navbar-background" class="m-0">
-            <ul class="list-unstyled text-black nav flex-column">
-                <a href="#chicken"><li class="nav-item col-sm-12 text-center">Chicken</li></a>
-                <a href="#beef"><li class="nav-item col-sm-12 text-center">Beef</li></a>
-                <a href="#beef"><li class="nav-item col-sm-12 text-center">Sushi</li></a>
-            </ul>
-        </div>
-    </div>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Food, LLC</h1></a>
+                    </div>
 
-    <div class="container" id="mainpage">
-        <h1 class="text-center">Our Menu</h1>
-        <div id="menu">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12" id="chicken">
-                    <h1 class="text-center">Chicken</h1>
-                    <div class="px-4 pb-4 pt-0 m-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12" id="beef">
-                    <h1 class="text-center">Beef</h1>
-                    <div class="px-4 pb-4 pt-0 m-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12" id="sushi">
-                    <h1 class="text-center">Sushi</h1>
-                    <div class="px-4 pb-4 pt-0 m-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li class="visible-xs">
+                            <a href=""><br class="hidden-xs"><h3>Chicken</h3></a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href=""><br class="hidden-xs"><h3>Beef</h3></a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href=""><br class="hidden-xs"><h3>Sushi</h3></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
+    <h1 class="text-center">Our Menu</h1>
+    <div class="menu-item col-sm-12 col-md-6 col-lg-4">
+        <section>
+        <h2 id="text">Chicken</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut hic fuga aliquam numquam non tempore dolorum in reprehenderit ratione praesentium, quae vero esse asperiores ad, facere aspernatur mollitia? Maiores, non.</p>
+        </section>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <div class="menu-item col-sm-12 col-md-6 col-lg-4">
+        <section>
+        <h2 id="text">Beef</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius accusantium perferendis adipisci fugit officia mollitia quibusdam facere, optio delectus consectetur. Exercitationem odit cupiditate deleniti quos asperiores quis debitis. Recusandae!</p>
+        </section>
+    </div>
+    <div class="menu-item col-sm-12 col-md-6 col-lg-4 third">
+        <section>
+        <h2 id="text">Sushi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a autem aliquam magni ab commodi quisquam. Nesciunt nemo necessitatibus consectetur eius quos numquam totam omnis adipisci reprehenderit cum, possimus assumenda.</p>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
